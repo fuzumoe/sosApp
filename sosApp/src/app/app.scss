@@ -1,16 +1,194 @@
-// http://ionicframework.com/docs/v2/theming/
-
-
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+  // http://ionicframework.com/docs/v2/theming/
+  // App Global Sass
+  // --------------------------------------------------
+  // Put style rules here that you want to apply globally. These
+  // styles are for the entire app and not just one component.
+  // Additionally, this file can be also used as an entry point
+  // to import other Sass files to be included in the output CSS.
+  //
+  // Shared Sass variables, which can be used to adjust Ionic's
+  // default Sass variables, belong in "theme/variables.scss".
+  //
+  // To declare rules for a specific mode, create a child rule
+  // for the .md, .ios, or .wp mode classes. The mode class is
+  // automatically applied to the <body> element in the app.
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-family: 'CollegiateFLF';
+  }
+  
+  a {
+      text-decoration: none;
+      color: #FFF;
+  }
+  
+  p {
+      font-family: 'CollegiateInsideFLF';
+  }
+  
+  .scroll-content {
+      background: url('../assets/images/background.png');
+      color: inherit;
+  }
+  
+  .toolbar-background {
+      background: url('../assets/images/header.jpg');
+      font-family: 'CollegiateFLF';
+      color: #fff;
+      border-bottom: solid #FFF 1px;
+  }
+  
+  .toolbar-title-md,
+  .toolbar-title-wp {
+      color: #fff;
+      margin-left: 30%;
+      margin-right: 30%;
+  }
+  
+  .toolbar-title-md,
+  .toolbar-title-ios,
+  .toolbar-title-wp {
+      font-family: 'CollegiateFLF';
+      color: #fff;
+  }
+  
+  .content-md,
+  .content-ios,
+  .content-wp {
+      background: url('../assets/images/background.jpg');
+  }
+  
+  .list-md,
+  .list-ios,
+  .list-wp {
+      background: url('../assets/images/background.jpg');
+  }
+  
+  .item-inner {
+      border: none;
+      border-bottom: none;
+      border-top: none;
+  }
+  
+  .item-md,
+  .item-ios,
+  .item-wp {
+      background: url('../assets/images/background.jpg');
+      color: #FFF;
+      border-bottom: 1px solid #fff;
+  }
+  
+  .item-wp {
+      border-bottom: 2px solid #fff;
+  }
+  
+  .active .show-backdrop {
+      color: #FFF;
+  }
+  
+  .active .modal-backdrop-bg {
+      opacity: 1;
+  }
+  
+  #side-bar {
+      background: url('../assets/images/background.jpg');
+      font-family: 'CollegiateFLF';
+      color: #FFF;
+  }
+  
+  #side-bar button {
+      background: inherit;
+      color: inherit;
+  }
+  
+  #side-bar .scroll-content {
+      //   background: url('../assets/images/side-bar-bg.png');
+      background: rgba(42, 104, 136, 0.5);
+  }
+  
+  #side-bar .list-md,
+  .list-ios,
+  .list-wp {
+      //background: url('../assets/images/side-bar-bg.png');
+      background: rgba(42, 104, 136, 0.5);
+  }
+  
+  .slider-content .scroll-content {
+      background: #000;
+  }
+  
+  //   class="swiper-pagination-bullet swiper-pagination-bullet-active"
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+      color: #FFF;
+      background: #aaa9a8;
+  }
+  
+  .sliderImage {
+      background: #000;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      margin-top: 1%;
+  }
+  
+  .sliderInfo {
+      background: rgba(42, 104, 135, 0.5);
+      position: absolute;
+      z-index: 3;
+      top: 30%;
+      left: 0px;
+      width: 100%;
+      height: 33%;
+      border-bottom: 2px solid #aaa9a8;
+      border-top: 2px solid #aaa9a8;
+  }
+  
+  .sliderInfo p {
+      text-align: justify;
+  }
+  
+  .navigator {
+      position: absolute;
+      left: 0;
+      top: 80%;
+      width: 100%;
+      height: 10%;
+      z-index: 4;
+      background: rgba(42, 104, 135, 0.5);
+      border-bottom: 2px solid #aaa9a8;
+      border-top: 2px solid #aaa9a8;
+  }
+  
+  .navigator .logo {
+      z-index: 5;
+      height: 160%;
+      margin-top: -15px;
+      width: 40%;
+      float: left;
+  }
+  
+  .navigator .menu-item {
+      z-index: 5;
+      height: 134%;
+      float: left;
+  }
+  
+  .navigator .menu-item a {
+      border-right: 1px solid #aaa9a8;
+      border-left: 1px solid #aaa9a8;
+      padding: 2px;
+      padding-top: 6px;
+      line-height: 100%;
+  }
+  
+  .navigator .menu-item a:hover {
+      background: #FFF;
+      color: #000;
+      border: none;
+  }
