@@ -13,37 +13,37 @@
 </ion-header>-->
 
 
-<ion-content class="slider-content">
+<ion-content class="slider-content" overflow-scroll="false">
     <ion-slides [options]="slideerOption">
         <ion-slide>
             <img src="../../assets/images/slider-image-1.png" class="sliderImage" alt="">
             <div class="sliderInfo" padding>
                 <h1>Lorem ipsum </h1>
                 <p>
-                    consectetur adipisicing elit. Natus sequi labore sapiente quas provident, a ex, incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
+                    incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
 
                 </p>
             </div>
 
         </ion-slide>
         <ion-slide>
-            <img src="../../assets/images/slider-image-2.png" class="sliderImage" alt="">
+            <img src="assets/images/slider-image-2.png" class="sliderImage" alt="">
             <div class="sliderInfo" padding>
 
                 <h1>Lorem ipsum </h1>
                 <p>
-                    consectetur adipisicing elit. Natus sequi labore sapiente quas provident, a ex, incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
+                    incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
 
                 </p>
             </div>
 
         </ion-slide>
         <ion-slide>
-            <img src="../../assets/images/slider-image-3.png" class="sliderImage" alt="">
+            <img src="assets/images/slider-image-3.png" class="sliderImage" alt="">
             <div class="sliderInfo" padding>
                 <h1>Lorem ipsum </h1>
                 <p>
-                    consectetur adipisicing elit. Natus sequi labore sapiente quas provident, a ex, incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
+                    incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
 
                 </p>
 
@@ -54,11 +54,20 @@
     </ion-slides>
     <div class="navigator">
 
-        <img src="../../assets/images/lower-nab-bar-logo.png" class="logo" alt="">
+        <img src="assets/images/lower-nab-bar-logo.png" class="logo" alt="">
 
-        <div class="menu-item">
-            <h3> <a href="#">SIGN UP </a> <a href="#">SIGN IN</a></h3>
+        <div class="menu-item" (click)="goRegister()">
+            <h6> <a href="#">SIGN UP  </a></h6>
         </div>
+        <div class="menu-item" id="first-item">
+
+        </div>
+        <div class="menu-item" (click)="goLogin()">
+            <!--<h6><span>|</span></h6>-->
+            <h6> <a href="#">&nbsp;&nbsp;SIGN IN</a></h6>
+        </div>
+
+
 
     </div>
 </ion-content>

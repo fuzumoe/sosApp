@@ -1,0 +1,84 @@
+<!--
+  Generated template for the Login page.d
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--<ion-header>
+
+    <ion-navbar>
+        <ion-title>Sign-Up</ion-title>
+    </ion-navbar>
+
+</ion-header>-->
+
+
+<ion-content no-lines>
+    <!--style="margin-top: 10px; margin-bottom: 10px;"-->
+    <!--<img src="assets/images/banner-logo.png" width="100" height="60" class="login-logo" alt="logo">-->
+    <!--(ngSubmit)="doLogin()"-->
+    <div class=" navigator-ordered">
+
+        <img src="assets/images/lower-nab-bar-logo.png" class="logo" alt="">
+
+        <div class="menu-item ten-px-padding-top active-menu">
+            <h6> <a href="#">SIGN UP  </a></h6>
+        </div>
+        <div class="menu-item" id="first-item">
+
+        </div>
+        <div class="menu-item " (click)="goLogin()">
+            <!--<h6><span>|</span></h6>-->
+            <h6> <a href="#">&nbsp;&nbsp;SIGN IN</a></h6>
+        </div>
+
+
+
+    </div>
+    <form #f="ngForm" id="loginForm">
+
+        <ion-list no-lines>
+            <ion-item>
+                <ion-label floating>Email</ion-label>
+                <ion-input pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" class="form-control" type="text" name="emailField" required>
+                    <!--[(ngModel)]="user.emailField" -->
+                </ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Password</ion-label>
+                <!--[(ngModel)]="user.passwordField"-->
+                <ion-input class="form-control" type="password" name="passwordField" required></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Retype-Password</ion-label>
+                <!--[(ngModel)]="user.passwordField"-->
+                <ion-input class="form-control" type="password" name="passwordField" required></ion-input>
+            </ion-item>
+            <ion-item class="item-button-holder">
+
+                <button ion-button type="submit" class=" btn primary-btn" ion-button block large [disabled]="!f.valid">     
+                  <ion-icon name="log-in" class="icon-btn" item-right></ion-icon> 
+                
+                 <div class="text text-center" style="margin-left: 15%;" text-center >Sign-Up </div> 
+                   </button>
+
+
+                <button type="button" class=" btn secondary-btn" ion-button block large [disabled]="!f.valid"> 
+                    <ion-icon name="logo-facebook" class="icon-btn" item-right ></ion-icon>
+                    <div class="text text-center" text-center>Sign-Up with Facebook</div> 
+                    </button>
+
+                <button type="button" class=" btn danger-btn" ion-button block large [disabled]="!f.valid">   
+                  <ion-icon name="logo-googleplus" class="icon-btn" item-right></ion-icon>
+                 <div class="text text-center" text-center >Sign-Up with Google+</div> </button>
+            </ion-item>
+        </ion-list>
+
+
+
+
+    </form>
+
+
+</ion-content>

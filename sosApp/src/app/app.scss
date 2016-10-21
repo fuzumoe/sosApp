@@ -1,194 +1,409 @@
-  // http://ionicframework.com/docs/v2/theming/
-  // App Global Sass
-  // --------------------------------------------------
-  // Put style rules here that you want to apply globally. These
-  // styles are for the entire app and not just one component.
-  // Additionally, this file can be also used as an entry point
-  // to import other Sass files to be included in the output CSS.
-  //
-  // Shared Sass variables, which can be used to adjust Ionic's
-  // default Sass variables, belong in "theme/variables.scss".
-  //
-  // To declare rules for a specific mode, create a child rule
-  // for the .md, .ios, or .wp mode classes. The mode class is
-  // automatically applied to the <body> element in the app.
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-      font-family: 'CollegiateFLF';
-  }
-  
-  a {
-      text-decoration: none;
-      color: #FFF;
-  }
-  
-  p {
-      font-family: 'CollegiateInsideFLF';
-  }
-  
-  .scroll-content {
-      background: url('../assets/images/background.png');
-      color: inherit;
-  }
-  
-  .toolbar-background {
-      background: url('../assets/images/header.jpg');
-      font-family: 'CollegiateFLF';
-      color: #fff;
-      border-bottom: solid #FFF 1px;
-  }
-  
-  .toolbar-title-md,
-  .toolbar-title-wp {
-      color: #fff;
-      margin-left: 30%;
-      margin-right: 30%;
-  }
-  
-  .toolbar-title-md,
-  .toolbar-title-ios,
-  .toolbar-title-wp {
-      font-family: 'CollegiateFLF';
-      color: #fff;
-  }
-  
-  .content-md,
-  .content-ios,
-  .content-wp {
-      background: url('../assets/images/background.jpg');
-  }
-  
-  .list-md,
-  .list-ios,
-  .list-wp {
-      background: url('../assets/images/background.jpg');
-  }
-  
-  .item-inner {
-      border: none;
-      border-bottom: none;
-      border-top: none;
-  }
-  
-  .item-md,
-  .item-ios,
-  .item-wp {
-      background: url('../assets/images/background.jpg');
-      color: #FFF;
-      border-bottom: 1px solid #fff;
-  }
-  
-  .item-wp {
-      border-bottom: 2px solid #fff;
-  }
-  
-  .active .show-backdrop {
-      color: #FFF;
-  }
-  
-  .active .modal-backdrop-bg {
-      opacity: 1;
-  }
-  
-  #side-bar {
-      background: url('../assets/images/background.jpg');
-      font-family: 'CollegiateFLF';
-      color: #FFF;
-  }
-  
-  #side-bar button {
-      background: inherit;
-      color: inherit;
-  }
-  
-  #side-bar .scroll-content {
-      //   background: url('../assets/images/side-bar-bg.png');
-      background: rgba(42, 104, 136, 0.5);
-  }
-  
-  #side-bar .list-md,
-  .list-ios,
-  .list-wp {
-      //background: url('../assets/images/side-bar-bg.png');
-      background: rgba(42, 104, 136, 0.5);
-  }
-  
-  .slider-content .scroll-content {
-      background: #000;
-  }
-  
-  //   class="swiper-pagination-bullet swiper-pagination-bullet-active"
-  .swiper-pagination-bullet,
-  .swiper-pagination-bullet-active {
-      color: #FFF;
-      background: #aaa9a8;
-  }
-  
-  .sliderImage {
-      background: #000;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      height: 100%;
-      margin-top: 1%;
-  }
-  
-  .sliderInfo {
-      background: rgba(42, 104, 135, 0.5);
-      position: absolute;
-      z-index: 3;
-      top: 30%;
-      left: 0px;
-      width: 100%;
-      height: 33%;
-      border-bottom: 2px solid #aaa9a8;
-      border-top: 2px solid #aaa9a8;
-  }
-  
-  .sliderInfo p {
-      text-align: justify;
-  }
-  
-  .navigator {
-      position: absolute;
-      left: 0;
-      top: 80%;
-      width: 100%;
-      height: 10%;
-      z-index: 4;
-      background: rgba(42, 104, 135, 0.5);
-      border-bottom: 2px solid #aaa9a8;
-      border-top: 2px solid #aaa9a8;
-  }
-  
-  .navigator .logo {
-      z-index: 5;
-      height: 160%;
-      margin-top: -15px;
-      width: 40%;
-      float: left;
-  }
-  
-  .navigator .menu-item {
-      z-index: 5;
-      height: 134%;
-      float: left;
-  }
-  
-  .navigator .menu-item a {
-      border-right: 1px solid #aaa9a8;
-      border-left: 1px solid #aaa9a8;
-      padding: 2px;
-      padding-top: 6px;
-      line-height: 100%;
-  }
-  
-  .navigator .menu-item a:hover {
-      background: #FFF;
-      color: #000;
-      border: none;
-  }
+// http://ionicframework.com/docs/v2/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'CollegiateFLF';
+}
+
+button {
+    font-family: 'CollegiateInsideFLF';
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+p {
+    font-family: 'CollegiateInsideFLF';
+}
+
+.scroll-content {
+    background: url('../assets/images/background.png');
+    color: inherit;
+}
+
+.toolbar-background {
+    background: url('../assets/images/header.jpg');
+    font-family: 'CollegiateInsideFLF';
+    color: #fff;
+    border-bottom: solid #FFF 1px;
+    font-style: none;
+    font-weight: normal;
+}
+
+.toolbar-title-md,
+.toolbar-title-wp {
+    color: #fff;
+    // margin-left: 30%;
+    // margin-right: 30%;
+    text-align: center;
+}
+
+.toolbar-title-md,
+.toolbar-title-ios,
+.toolbar-title-wp {
+    font-family: 'CollegiateInsideFLF';
+    color: #fff;
+}
+
+.toolbar-title-wp {
+    padding-top: 5px;
+}
+
+.content-md,
+.content-ios,
+.content-wp {
+    background: url('../assets/images/background.jpg');
+}
+
+.list-md,
+.list-ios,
+.list-wp {
+    background: url('../assets/images/background.jpg');
+}
+
+.item-md,
+.item-ios,
+.item-wp {
+    background: url('../assets/images/background.jpg');
+    color: #FFF;
+    border-bottom: 1px solid #fff;
+}
+
+.item-wp {
+    border-bottom: 2px solid #fff;
+}
+
+.active .show-backdrop {
+    color: #FFF;
+}
+
+.active .modal-backdrop-bg {
+    opacity: 1;
+}
+
+#side-bar {
+    overflow: hidden;
+    background: url('../assets/images/background.jpg');
+    font-family: 'CollegiateFLF';
+    color: #FFF;
+}
+
+#side-bar button {
+    background: inherit;
+    color: inherit;
+}
+
+.scroll-bar-indicator {
+    display: none;
+}
+
+#side-bar .scroll-content {
+    //   background: url('../assets/images/side-bar-bg.png');
+    background: rgba(42, 104, 136, 0.5);
+}
+
+#side-bar .list-md,
+.list-ios,
+.list-wp {
+    //background: url('../assets/images/side-bar-bg.png');
+    background: rgba(42, 104, 136, 0.5);
+}
+
+.slider-content .scroll-content {
+    background: #000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+//   class="swiper-pagination-bullet swiper-pagination-bullet-active"
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    color: #FFF;
+    background: #aaa9a8;
+}
+
+img.sliderImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.sliderInfo {
+    background: rgba(42, 104, 135, 0.5);
+    position: absolute;
+    z-index: 3;
+    top: 30%;
+    left: 0px;
+    width: 100%;
+    height: 33%;
+    border-bottom: 2px solid #aaa9a8;
+    border-top: 2px solid #aaa9a8;
+}
+
+.sliderInfo>p {
+    text-align: justify;
+}
+
+.overflow-scroll {
+    overflow-y: auto;
+}
+
+body.keyboard-is-open .navigator-ordered {
+    display: none;
+}
+
+.navigator {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 100%;
+    height: 10%;
+    z-index: 4;
+    background: rgba(42, 104, 135, 0.5);
+    border-bottom: 2px solid #aaa9a8;
+    border-top: 2px solid #aaa9a8;
+}
+
+.navigator-ordered {
+    width: 100%;
+    height: 10%;
+    background: rgba(42, 104, 135, 0.5);
+    border-bottom: 2px solid #aaa9a8;
+    border-top: 2px solid #aaa9a8;
+    margin-top: 4%;
+}
+
+.navigator-ordered>img.logo {
+    display: block;
+    z-index: 5;
+    height: 160%;
+    margin-top: -10px;
+    // width: 40%;
+    float: left;
+}
+
+.navigator>img.logo {
+    display: block;
+    z-index: 5;
+    height: 160%;
+    margin-top: -15px;
+    // width: 40%;
+    float: left;
+}
+
+.navigator>.menu-item,
+.navigator-ordered>.menu-item {
+    z-index: 5;
+    height: 134%;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navigator>.menu-item h6,
+.navigator-ordered>.menu-item h6 {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.navigator>.menu-item h6 span,
+.navigator-ordered>.menu-item h6 span,
+{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.navigator>.menu-item a,
+.navigator-ordered>.menu-item a {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 100%;
+}
+
+.navigator>.menu-item:hover,
+.navigator-ordered>.menu-item:hover {
+    background: #FFF;
+    color: #000;
+    border: none;
+    height: 110%;
+    padding-left: 5px;
+    margin-top: -1px;
+    // margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.navigator>.active-menu,
+.navigator-ordered>.active-menu {
+    background: #FFF;
+    color: #000;
+    border: none;
+    height: 110%;
+    padding-left: 5px;
+    margin-top: -1px;
+    // margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.navigator>.menu-item:hover h6 a,
+.navigator-ordered>.menu-item:hover h6 a {
+    color: #000;
+}
+
+#first-item {
+    border-right: 1px solid #aaa9a8;
+    height: 80%;
+    // margin-right: 10px;
+    // margin-left: 6px;
+}
+
+// .navigator>.ten-px-padding-top {
+//     padding-top: -20px;
+// }
+.active-menu h6 a {
+    color: #000;
+}
+
+form {
+    font-family: 'CollegiateFLF';
+    color: #fff;
+}
+
+#loginForm>.list-md,
+#loginForm>.list-ios,
+#loginForm>.list-wp {
+    background: transparent;
+    margin: auto;
+    margin-top: -5%;
+    padding-top: -5%;
+}
+
+#loginForm {
+    margin-top: 3%;
+}
+
+.item-md>.item-inner>.input-wrapper>.label-md,
+.item-wp>.item-inner>.input-wrapper>.label-wp,
+.item-ios>.item-inner>.input-wrapper>.label-ios {
+    color: #fff;
+    padding-top: 2%;
+}
+
+.item-md>.item-inner>.input-wrapper,
+.item-wp>.item-inner>.input-wrapper,
+.item-ios>.item-inner>.input-wrapper {
+    border-bottom: 1px solid #fff;
+}
+
+.item-button-holder>.item-inner>.input-wrapper,
+.item-button-holder>.item-inner>.input-wrapper,
+.item-button-holder>.item-inner>.input-wrapper {
+    border-bottom: none;
+}
+
+.item-wp>.item-inner>.input-wrapper>.input-wp>.text-input-wp {
+    border: none;
+}
+
+.item-md>.item-inner>.input-wrapper>.input-md>.text-input-md,
+.item-ios>.item-inner>.input-wrapper>.input-ios>.text-input-ios,
+.item-wp>.item-inner>.input-wrapper>.input-wp>.text-input-wp {
+    padding-left: 5%;
+}
+
+.item-md>.item-inner>.input-wrapper>.input-md,
+.item-wp>.item-inner>.input-wrapper>.input-wp,
+.item-ios>.item-inner>.input-wrapper>.input-ios {
+    color: #aaa9a8;
+    font-family: 'CollegiateInsideFLF';
+    padding-top: 2%;
+}
+
+.button-inner {
+    justify-content: flex-start;
+}
+
+.btn {
+    display: block;
+    font-size: 15px;
+}
+
+.btn>.button-inner {
+    text-align: center;
+}
+
+.btn>.button-inner>.text {
+    display: block;
+    align-content: center;
+    text-align: center;
+    float: right;
+}
+
+.btn>.button-inner>.icon-btn {
+    font-size: 25px;
+    margin-right: 10%;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background: url('../assets/images/primaryButton.png');
+    background-repeat: repeat-x;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.secondary-btn {
+    background: url('../assets/images/secondaryButton.png');
+    background-repeat: repeat-x;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.danger-btn {
+    background: url('../assets/images/dangerButton.png');
+    background-repeat: repeat-x;
+    height: 50px;
+    border-radius: 4px;
+}
+
+img.login-logo {
+    display: block;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.scroll {
+    height: 100%;
+}

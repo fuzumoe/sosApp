@@ -1,3 +1,5 @@
+import { Register } from './../register/register';
+import {Login} from './../login/login';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -12,6 +14,11 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class Home {
+  private firstName:string;
+
+  
+   
+
  slideerOption = {
     initialSlide: 1,
     loop: true,
@@ -19,10 +26,21 @@ export class Home {
    pager	:true,
    speed:1000
   };
+
   constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {
     console.log('Hello Home Page');
   }
+  
 
+  public goLogin(){
+    console.log("moving");
+     this.navCtrl.push(Login);
+      console.log("moving");
+  }
+  public goRegister(){
+    this.navCtrl.push(Register);
+
+  }
 }
