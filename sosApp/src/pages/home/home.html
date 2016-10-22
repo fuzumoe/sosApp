@@ -7,67 +7,76 @@
 <!--<ion-header>
 
     <ion-navbar class="bar-stable" class="bar-stable" align-title="center">
-        <ion-title align-title="center"><img height="40" style="margin-top: 10px; margin-bottom: 10px;" src="../../assets/images/logoPure.png" alt=""></ion-title>
+        <ion-title align-title="center"><img height="40" style="margin-top: 10px; margin-bottom: 10px;" src="../../assets/images/logoPure.svg" alt=""></ion-title>
     </ion-navbar>
 
 </ion-header>-->
 
 
-<ion-content class="slider-content" overflow-scroll="false">
-    <ion-slides [options]="slideerOption">
-        <ion-slide>
-            <img src="../../assets/images/slider-image-1.png" class="sliderImage" alt="">
-            <div class="sliderInfo" padding>
-                <h1>Lorem ipsum </h1>
-                <p>
-                    incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
+<ion-content class="slider-content" overflow-scroll="false" scroll="false">
+	<ion-slides [options]="slideerOption">
+		<ion-slide>
+			<object data="your.svg" type="image/svg+xml">
+  <img src="assets/images/slider-portrait-2.svg"  class="sliderImage" />
+</object>
+			<!--<img src="../../assets/images/slider-portrait-1.svg" class="sliderImage" alt="">-->
+			<div class="sliderInfo" padding>
+				<h1>Lorem ipsum </h1>
+				<p>
+					incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
 
-                </p>
-            </div>
+				</p>
+			</div>
 
-        </ion-slide>
-        <ion-slide>
-            <img src="assets/images/slider-image-2.png" class="sliderImage" alt="">
-            <div class="sliderInfo" padding>
+		</ion-slide>
+		<ion-slide>
+			<object data="your.svg" type="image/svg+xml">
+  <img src="assets/images/slider-portrait-1.svg"  class="sliderImage"/>
+</object>
+			<!--<img src="assets/images/slider-portrait-2.svg" class="sliderImage" alt="">-->
+			<div class="sliderInfo" padding>
 
-                <h1>Lorem ipsum </h1>
-                <p>
-                    incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
+				<h1>Lorem ipsum </h1>
+				<p>
+					incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
 
-                </p>
-            </div>
+				</p>
+			</div>
 
-        </ion-slide>
-        <ion-slide>
-            <img src="assets/images/slider-image-3.png" class="sliderImage" alt="">
-            <div class="sliderInfo" padding>
-                <h1>Lorem ipsum </h1>
-                <p>
-                    incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
+		</ion-slide>
+		<ion-slide>
+			<object data="your.svg" type="image/svg+xml">
+  <img src="assets/images/slider-portrait-3.svg"  class="sliderImage" />
+</object>
+			<!--<img src="assets/images/slider-portrait-3.svg" class="sliderImage" alt="">-->
+			<div class="sliderInfo" padding>
+				<h1>Lorem ipsum </h1>
+				<p>
+					incidunt animi beatae consectetur ratione est laboriosam! Quia totam, fuga asperiores nemo dolor accusantium.
 
-                </p>
+				</p>
 
-            </div>
+			</div>
 
-        </ion-slide>
+		</ion-slide>
 
-    </ion-slides>
-    <div class="navigator">
+	</ion-slides>
+	<div class="navigator">
 
-        <img src="assets/images/lower-nab-bar-logo.png" class="logo" alt="">
+		<img src="assets/images/lower-nab-bar-logo.png" class="logo" alt="">
 
-        <div class="menu-item" (click)="goRegister()">
-            <h6> <a href="#">SIGN UP  </a></h6>
-        </div>
-        <div class="menu-item" id="first-item">
+		<div class="menu-item" (click)="goRegister()">
+			<h6> <a href="#">SIGN UP  </a></h6>
+		</div>
+		<div class="menu-item" id="first-item">
 
-        </div>
-        <div class="menu-item" (click)="goLogin()">
-            <!--<h6><span>|</span></h6>-->
-            <h6> <a href="#">&nbsp;&nbsp;SIGN IN</a></h6>
-        </div>
+		</div>
+		<div class="menu-item" (click)="goLogin()">
+			<!--<h6><span>|</span></h6>-->
+			<h6> <a href="#">&nbsp;&nbsp;SIGN IN</a></h6>
+		</div>
 
 
 
-    </div>
+	</div>
 </ion-content>

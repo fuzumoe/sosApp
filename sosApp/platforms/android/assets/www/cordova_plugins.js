@@ -34,19 +34,27 @@ module.exports = [
         "runs": true
     },
     {
-        "id": "cordova-plugin-screen-orientation.screenorientation",
-        "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
-        "pluginId": "cordova-plugin-screen-orientation",
+        "id": "cordova-plugin-device-orientation.CompassError",
+        "file": "plugins/cordova-plugin-device-orientation/www/CompassError.js",
+        "pluginId": "cordova-plugin-device-orientation",
         "clobbers": [
-            "cordova.plugins.screenorientation"
+            "CompassError"
         ]
     },
     {
-        "id": "cordova-plugin-screen-orientation.screenorientation.android",
-        "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.android.js",
-        "pluginId": "cordova-plugin-screen-orientation",
-        "merges": [
-            "cordova.plugins.screenorientation"
+        "id": "cordova-plugin-device-orientation.CompassHeading",
+        "file": "plugins/cordova-plugin-device-orientation/www/CompassHeading.js",
+        "pluginId": "cordova-plugin-device-orientation",
+        "clobbers": [
+            "CompassHeading"
+        ]
+    },
+    {
+        "id": "cordova-plugin-device-orientation.compass",
+        "file": "plugins/cordova-plugin-device-orientation/www/compass.js",
+        "pluginId": "cordova-plugin-device-orientation",
+        "clobbers": [
+            "navigator.compass"
         ]
     }
 ];
@@ -59,7 +67,7 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.0",
     "cordova-plugin-whitelist": "1.3.0",
     "ionic-plugin-keyboard": "2.2.1",
-    "cordova-plugin-screen-orientation": "1.4.2"
+    "cordova-plugin-device-orientation": "1.0.4"
 };
 // BOTTOM OF METADATA
 });
